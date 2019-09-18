@@ -15,7 +15,7 @@ paginate = 5
   # set theme to full screen width
   fullWidthTheme = false
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
 
@@ -23,7 +23,7 @@ paginate = 5
   [languages.en]
     languageName = "English"
     title = "pachu.me"
-    subtitle = "A simple, retro theme for Hugo"
+    subtitle = "pachu's blog"
     keywords = ""
     copyright = ""
     menuMore = "Show more"

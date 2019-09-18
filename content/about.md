@@ -25,5 +25,8 @@ I Love reading, scowering for updates on reddit/hackernews/google news. I love k
 ## Games
 I love both playing and making games. I love video games, but the format doesn't matter too much to me, I enjoy board games and sport as well. I don't really like single player games. For me games are only enjoyable as multiplayer. I enjoy interacting with other players and testing myself against them.
 
+<br>
 
 I have many more interests, but its too much to get it all down here. Hopefully I will be able to expand this page over time to be more complete. 
+
+[LinkedIn](https://linkedin.com/in/pachu-chembukave-036053191) * [Github](https://github.com/pachuc) * [Twitter](https://twitter.com/unpwn1)

@@ -25,5 +25,7 @@ After deciding against Medium, I also looked into some other hosted solutions: [
 
 So, I had decided to self-host my own website, now I had to choose a tech stack. Since it would be mostly a blog/personal website, static site generation seemed to be the simplest and best answer. I had some previous experience with [Jekyll](https://jekyllrb.com/), but ultimately, I decided on [Hugo](https://gohugo.io/). Jekyll had the advantage of a large community: more integrations, more themes, more support available. However, I see Hugo as the better alternative as it is much faster; I personally prefer Golang to Ruby; and while Hugo may not have as many themes, it has enough good ones, and I hope to one day customize my theme anyway. 
 
-I figured out why I should write, where I should write, and how I should write. As far what I should write about, I'm still working on that. Hopefully I can keep writing, and hopefully people will keep (start) reading!
+# What to Write
+
+I figured out why I should write, where I should write, and how I should write. As far what I should write about, I'm still working on that. Since I expect this to be a personal blog, the list of topics I can cover I actually quite diverse. From technical topics like programming and security, to more light hearted topics such as my favorite movies. Hopefully the breadth of available topics can keep writing, and hopefully people will keep (start) reading!
 

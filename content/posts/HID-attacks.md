@@ -1,4 +1,7 @@
 ---
+tags:
+  - security
+  - programming
 title: "HID Attacks"
 date: 2019-10-25T14:31:47-04:00
 draft: false

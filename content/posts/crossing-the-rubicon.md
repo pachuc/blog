@@ -1,19 +1,20 @@
 ---
+tags:
+    - programming
+    - work
+    - Ruby
 title: "Crossing the Rubicon"
 date: 2020-11-23T21:55:38-05:00
 draft: false
 ---
 
-Recently, since I started my new job at ID.me, I have had to learn Ruby. 
-I had no previous experience in Ruby or Rails, so this will be a python nerd's first introduction to Ruby. 
-Upon quick inspection, Ruby feels similar to python in many ways, so I don't expect it to be too difficult to pick up. 
-Hopefully as I wade through the tall grass I can point out where the snakes and gems lie.
+Recently, since I started my new job at ID.me, I have had to learn Ruby. I had no previous experience in Ruby or Rails, so this will be a python nerd's first introduction to Ruby. Upon quick inspection, Ruby feels similar to python in many ways, so I don't expect it to be too difficult to pick up. Hopefully as I wade through the tall grass I can point out where the snakes and gems lie.
 
-## Basics
+# Basics
 
 The first thing I set out to do is quickly read up on the basics and syntax of Ruby.
 
-### Syntax
+###### Syntax
 
 Hello World
 ```
@@ -43,7 +44,7 @@ puts "Hello, Ruby!";
 - ```\``` is the escape character
 - ```?a``` produces the character code for 'a'
 
-### Concepts & Structures
+###### Concepts & Structures
 
 - Everything in Ruby is considered an object, and so Ruby does not really have primitives in the normal sense.
 - Ruby is very much object oriented, and most Ruby code is written as hierarchical series of classes with, inheritance, overriding, varying scope and encapsulation enforcement.
@@ -82,13 +83,13 @@ end
 Rails.logger.info
 ```
 
-## Ecosystem
+# Ecosystem
 
 - gem is the ruby package manager. ruby packages are known as gem.
 - rspec seems to be the go to ruby test framework
 - obviously rails is the main draw of ruby and the go to web application framework
 
-### Rails
+###### Rails
 
 - Rails requires a JavaScript runtime (node.js + yarn). This is due to the default rails Asset Pipeline. Asset Pipeline takes care of js transpilation, as well as js & css concatenation/minification. It also has a neat system called fingerprinting, which names the minified file based on a hash of its contents, so when the files contents change, so does its generated name.
 - Also noticed Rails requires a database for default installation. This is because rails is very much tied to the concept of a database backed app, and the concept of ActiveRecord. ActiveRecord is just the concept of a database model class with data and methods that clearly represent how to interact with it.
@@ -104,7 +105,7 @@ Rails.logger.info
 - test for test cases & data
 - tmp for temporary files
 
-### Concurrency & Parallelism
+###### Concurrency & Parallelism
 
 - Ruby, much like Python, has a GIL. This makes parallelism in Ruby difficult out of the gate.
 - Ruby has a Thread class, but due to GIL, performance gains are minimal.
@@ -114,7 +115,7 @@ Rails.logger.info
 - Puma is a concurrent multi-threaded ruby web server. This is the default webserver implementation built into rails.
 - Sidekiq is a gem for background processing in Ruby that can integrate closely with rails. 
 
-### Dependency Management
+###### Dependency Management
 
 - A ruby package is called a gem. Ruby's package manager is called 'rubygems' and comes installed in Ruby now. Rubygems can be invoked by the command ```gem```. Rubygems is essentially like pip in python.
 - Much like package.json/requirements.txt, etc, Ruby has Gemfile. Gems for a project can be added to the Gemfile using ```gem install```.
@@ -122,9 +123,9 @@ Rails.logger.info
 - There are two popular tools for managing multiple ruby versions on your machine, so that you can have the correct ruby version for each project: rvm & rbenv.  The consensus seems to be using rbenv because it is a lighter weight tool, and has a less invasive method of 'shimming' ruby calls to the appropriate version, thus leading to less strange/unexpected behavior. 
 - Importing dependencies is done by using ```require```. Modules are packaged into hierarchical namespaces. Namespaces can be accessed via the ```::``` operator. An entire namespace can also be brought into the class by using the ```include``` statement. Rails manages a lot of this for you, so you don't need to require your dependencies in your code.
 
-## Dev Environment
+# Dev Environment
 
-### Puma
+###### Puma
 
 Puma is a gem webserver, used widely by the Rails & ruby community. Puma-dev allows one to set up local dns configuration, so that links are automatically routed to your rails apps, and it automatically launches the appropriate rails apps.  Puma can even point links at specific ports on your machine, so that non-rails apps can also be integrated into your puma environment.
 
@@ -136,7 +137,7 @@ alias reset_puma="cd ~/.puma-dev/; find . -type l -exec unlink {} \\; cd -;"
 alias list_puma="cd ~/.puma-dev/; ls -l; cd -;"
 ```
 
-### OSX
+###### OSX
 
 I am developing on OSX, so I needed xcode to compile local bindings & other C dependencies for certain Ruby gems. I found that I had issues with the latest releases of xcode, and was forced to download the 11.5 release to get everything to work.
 
@@ -164,19 +165,16 @@ make: *** [puma_http11.o] Error 1
 make failed, exit code 2
 ```
 
-Not sure what else will fail, and if/when xcode 12 will work, but I found that so far I've had no problems with xcode 11.5.
+Not sure what else will fail -- and if/when xcode 12 will work -- but I found that so far, I've had no problems with xcode 11.5.
 
-I also did not realize when I was setting up my new Macbook that OSX now ships with zsh as its default shell. I have been a zsh user for a long time now, but having it as default left me confused for a bit. Once I realized that zsh is the default shell, I understood that I need to add my config parameters to zshrc, which solved my issues. 
+I also did not realize, when I was setting up my new Macbook, that OSX now ships with zsh as its default shell. I have been a zsh user for a long time now, but having it as the default was a surprise. Once I realized that zsh is the default shell, I understood that I need to add my config parameters to zshrc, which solved many of my issues.
 
-## Conclusion
+# Conclusion
 
-At this point I have just tipped my toes in the river, and so there is still much to learn, and some of my opinions will be uninformed. Still, I will give my hot take impression of the language thus far. 
+At this point I have just dipped my toes in the river. I have much more to learn, and some of my opinions will be uninformed. Still, I will give my hot take impression of the language thus far.
 
-- Personally I am not a fan of the deeply object oriented approach to building things. I find that with strong encapsulation and class nesting/inheritance, it can be hard to wrap your head around new code. Often times reading this kind of code is like descending down a rabbit hole of nested classes. Encapsulation also makes it exceedingly difficult to shim & patch things quickly to adapt it to your needs, which is supposed to be strength of languages like Ruby/Python I feel. Furthermore, explicit encapsulation with the need to set things like setters & getters feels so trite. There are much better ways to secure your code & lock things down I feel.  I much prefer a functional approach with limited side-effects as an isolated function of inputs & outputs is much easier to read & test independently. I know Python also has a lot of the object-oriented design patterns, but it feels more flexible and up to the user as to whether they wish to use them, whereas in Ruby/Rails it feels much more forced.
-- Ruby is weird. It has a lot of different syntaxes that allow it to be used in a lot of different ways. This is a good thing in that it provides flexibility, but also feels a bit unnecessary to me, and just complicating things further for newcomers. One example is using ! to have functions raise errors, versus defaulting to returning true/false.  I feel that it would be better to stick to one consistent form of error handling. Furthermore, I feel that its probably best to just have code always blow up and raise exceptions loudly, requiring developers to explicitly catch and handle these errors. Returning true/false seems like an anti-pattern.
-- Rails is a very mature ecosystem, that is easy to start working with. There are tons of resources, and a great community to answer any questions you may have. Working with such a mature framework is great, as much of the pitfalls have already been identified and sorted out.
+- Personally I am not a fan of the deeply object oriented approach to building things. I find that with strong encapsulation and class nesting/inheritance, it can be hard to wrap your head around new code. Often reading this kind of code is like descending down a rabbit hole of nested classes. Encapsulation also makes it exceedingly difficult to shim & patch things, to adapt it to your needs, which is supposed to be strength of languages like Ruby/Python. Furthermore, explicit encapsulation, with the need to set things like setters & getters, feels trite. There are much better ways to secure your code & lock things down. I prefer a functional approach with limited side-effects, as an isolated function of inputs & outputs is much easier to read, debug, and test independently. I know Python also has a lot of these object-oriented design patterns, but it feels more flexible and up to the user as to whether they wish to use them.
+- Ruby is weird. It has a lot of syntaxes that allows it to be used in many ways. This is a good thing in that it provides flexibility, but it can also be bad in that it overcomplicates things for newcomers. One example is using ```!``` to have functions raise errors, versus defaulting to returning true/false. It is be better to stick to one consistent form of error handling. Furthermore, I feel that its probably best to just have code always blow up and raise exceptions loudly, requiring developers to explicitly catch and handle these errors. Returning true/false seems like an anti-pattern.
+- Rails is a very mature ecosystem, that is easy to start working with. There are tons of resources, and a great community to answer any questions you may have. Working with such a mature framework is great, as many of the pitfalls have already been identified and sorted out.
 
-Overall, I am enjoying diving into Ruby. 
-I may not agree with all of its design patterns, and I doubt it will every be my favorite language, but it is still a fun adventure. 
-I feel as if I have just taken my first step down the yellow brick road to emerald city, so I'm sure there is still of ton to learn along the way. 
-I will either update this post as new things come to me, or make some follow up posts to document my journey. 
+Overall, I am enjoying diving into Ruby. I may not agree with all of its design patterns, and I doubt it will every be my favorite language, but it is still a fun adventure. I feel as if I have just taken my first step down the yellow brick road to emerald city, so I'm sure there is still of ton to learn along the way. I will either update this post as new things come to me, or make some follow up posts to document my journey.

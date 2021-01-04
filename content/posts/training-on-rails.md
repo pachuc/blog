@@ -68,7 +68,7 @@ Rails also provides helper functions for routing to controller actions:
 | GET           | /admin/posts/new        | new               | new_admin_post_path         |
 | POST          | /admin/posts            | create            | admin_posts_path            |
 | GET           | /admin/posts/:id        | show              | admin_post_path (:id)       |
-| GET           | /admin/posts/:id/edit   | edit              | edit_admin_post_ path(:id)  |
+| GET           | /admin/posts/:id/edit   | edit              | edit_admin_post _path(:id)  |
 | PUT           | /admin/posts/:id        | update            | admin_post_path (:id)       |
 | DELETE        | /admin/posts/:id        | destroy           | admin_post_path (:id)       |
 

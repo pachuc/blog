@@ -1,41 +1,46 @@
 baseurl = "/"
 languageCode = "en-us"
-theme = "terminal"
-paginate = 5
+title = "pachu.me"
+theme = "tui-nav"
 
 [params]
-  # dir name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
-  # ["orange", "blue", "red", "green", "pink"]
-  themeColor = "green"
-  # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
-  # show selector to switch language
-  showLanguageSelector = false
-  # set theme to full screen width
-  fullWidthTheme = false
-  # center theme with default width
-  centerTheme = true
-  # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+  description = "An unorganized mind dump."
+  dateform = "January 2, 2006"
+  dateformShort = "Jan 2"
 
-[languages]
-  [languages.en]
-    languageName = "English"
-    title = "pachu.me"
-    subtitle = "pachu's blog"
-    keywords = ""
-    copyright = ""
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
+[params.tuiNav]
+  # Colors
+  backgroundColor = "#0a0a0a"
+  textColor = "#e0e0e0"
+  cursorColor = "#00ff00"
 
-    [languages.en.params.logo]
-      logoText = "pachu.me"
-      logoHomeLink = "/"
+  # Fonts
+  fontFamily = '"Home Video", ui-monospace, monospace'
+  contentFontFamily = '"JetBrains Mono", monospace'
 
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About Me"
-        url = "/about"
+  # Home page title (shown at top of homepage)
+  homeTitle = "Home"
+
+  # Title animation - animate letters in "Demo"
+  titleAnimationLetters = ["m", "e"]
+  titleAnimationColors = ["#00ff00", "#00ffff", "#ff00ff", "#ffff00", "#ff6b6b"]
+
+  # Homepage navigation
+  [[params.tuiNav.homeItems]]
+    title = "Writing"
+    url = "/posts/"
+    description = "ramblings"
+  
+  [[params.tuiNav.homeItems]]
+    title = "Projects"
+    url = "/projects/"
+    description = "cool stuff"
+
+  [[params.tuiNav.homeItems]]
+    title = "About"
+    url = "/about/"
+    description = "me"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

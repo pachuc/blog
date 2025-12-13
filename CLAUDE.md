@@ -32,3 +32,24 @@ hugo new projects/my-project.md
 ## Theme
 
 The active theme is `tui-nav` (git submodule at `themes/tui-nav`). Theme customization is done via `[params.tuiNav]` in `config.toml`, including colors, fonts, and homepage navigation items.
+
+## Scripts
+
+### Spotify Top Artists (`scripts/fetch_spotify.py`)
+
+Fetches top artists from Spotify API and generates static content for the about page.
+
+```bash
+# Set up credentials (from https://developer.spotify.com/dashboard)
+cp scripts/.env.example scripts/.env
+# Edit scripts/.env with your credentials
+
+# Run the script (first run opens browser for OAuth)
+cd scripts && uv run fetch_spotify.py
+```
+
+Outputs:
+- `data/spotify.json` - Artist data for Hugo
+- `static/images/artists/` - Downloaded artist images
+
+Used by `{{< spotify-artists >}}` shortcode in `content/about.md`.

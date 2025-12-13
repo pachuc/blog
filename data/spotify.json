@@ -1,0 +1,228 @@
+{
+  "top_artists": [
+    {
+      "name": "Justice",
+      "id": "1gR0gsQYfi6joyO1dlp76N",
+      "image": "/images/artists/1gR0gsQYfi6joyO1dlp76N.jpg",
+      "url": "https://open.spotify.com/artist/1gR0gsQYfi6joyO1dlp76N",
+      "genres": [
+        "french house",
+        "new rave"
+      ],
+      "popularity": 68
+    },
+    {
+      "name": "Clipse",
+      "id": "2J257euzcjnDLipsyJH3F2",
+      "image": "/images/artists/2J257euzcjnDLipsyJH3F2.jpg",
+      "url": "https://open.spotify.com/artist/2J257euzcjnDLipsyJH3F2",
+      "genres": [
+        "southern hip hop"
+      ],
+      "popularity": 67
+    },
+    {
+      "name": "Carpenter Brut",
+      "id": "1l2oLiukA9i5jEtIyNWIEP",
+      "image": "/images/artists/1l2oLiukA9i5jEtIyNWIEP.jpg",
+      "url": "https://open.spotify.com/artist/1l2oLiukA9i5jEtIyNWIEP",
+      "genres": [
+        "synthwave",
+        "darkwave"
+      ],
+      "popularity": 56
+    },
+    {
+      "name": "Tame Impala",
+      "id": "5INjqkS1o8h1imAzPqGZBb",
+      "image": "/images/artists/5INjqkS1o8h1imAzPqGZBb.jpg",
+      "url": "https://open.spotify.com/artist/5INjqkS1o8h1imAzPqGZBb",
+      "genres": [
+        "neo-psychedelic",
+        "indie"
+      ],
+      "popularity": 86
+    },
+    {
+      "name": "Tyler, The Creator",
+      "id": "4V8LLVI7PbaPR0K2TGSxFF",
+      "image": "/images/artists/4V8LLVI7PbaPR0K2TGSxFF.jpg",
+      "url": "https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF",
+      "genres": [],
+      "popularity": 88
+    },
+    {
+      "name": "Bon Iver",
+      "id": "4LEiUm1SRbFMgfqnQTwUbQ",
+      "image": "/images/artists/4LEiUm1SRbFMgfqnQTwUbQ.jpg",
+      "url": "https://open.spotify.com/artist/4LEiUm1SRbFMgfqnQTwUbQ",
+      "genres": [],
+      "popularity": 77
+    },
+    {
+      "name": "JPEGMAFIA",
+      "id": "6yJ6QQ3Y5l0s0tn7b0arrO",
+      "image": "/images/artists/6yJ6QQ3Y5l0s0tn7b0arrO.jpg",
+      "url": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO",
+      "genres": [
+        "experimental hip hop",
+        "alternative hip hop",
+        "experimental"
+      ],
+      "popularity": 65
+    },
+    {
+      "name": "JID",
+      "id": "6U3ybJ9UHNKEdsH7ktGBZ7",
+      "image": "/images/artists/6U3ybJ9UHNKEdsH7ktGBZ7.jpg",
+      "url": "https://open.spotify.com/artist/6U3ybJ9UHNKEdsH7ktGBZ7",
+      "genres": [],
+      "popularity": 76
+    },
+    {
+      "name": "Jeff Buckley",
+      "id": "3nnQpaTvKb5jCQabZefACI",
+      "image": "/images/artists/3nnQpaTvKb5jCQabZefACI.jpg",
+      "url": "https://open.spotify.com/artist/3nnQpaTvKb5jCQabZefACI",
+      "genres": [],
+      "popularity": 75
+    },
+    {
+      "name": "Russ",
+      "id": "1z7b1Pr1rSlvWRzsW3HOrS",
+      "image": "/images/artists/1z7b1Pr1rSlvWRzsW3HOrS.jpg",
+      "url": "https://open.spotify.com/artist/1z7b1Pr1rSlvWRzsW3HOrS",
+      "genres": [],
+      "popularity": 74
+    },
+    {
+      "name": "070 Shake",
+      "id": "12Zk1DFhCbHY6v3xep2ZjI",
+      "image": "/images/artists/12Zk1DFhCbHY6v3xep2ZjI.jpg",
+      "url": "https://open.spotify.com/artist/12Zk1DFhCbHY6v3xep2ZjI",
+      "genres": [],
+      "popularity": 71
+    },
+    {
+      "name": "underscores",
+      "id": "7HfUJxeVTgrvhk0eWHFzV7",
+      "image": "/images/artists/7HfUJxeVTgrvhk0eWHFzV7.jpg",
+      "url": "https://open.spotify.com/artist/7HfUJxeVTgrvhk0eWHFzV7",
+      "genres": [
+        "hyperpop"
+      ],
+      "popularity": 58
+    },
+    {
+      "name": "Childish Gambino",
+      "id": "73sIBHcqh3Z3NyqHKZ7FOL",
+      "image": "/images/artists/73sIBHcqh3Z3NyqHKZ7FOL.jpg",
+      "url": "https://open.spotify.com/artist/73sIBHcqh3Z3NyqHKZ7FOL",
+      "genres": [],
+      "popularity": 81
+    },
+    {
+      "name": "Danny Brown",
+      "id": "7aA592KWirLsnfb5ulGWvU",
+      "image": "/images/artists/7aA592KWirLsnfb5ulGWvU.jpg",
+      "url": "https://open.spotify.com/artist/7aA592KWirLsnfb5ulGWvU",
+      "genres": [
+        "experimental hip hop",
+        "alternative hip hop"
+      ],
+      "popularity": 65
+    },
+    {
+      "name": "The Weeknd",
+      "id": "1Xyo4u8uXC1ZmMpatF05PJ",
+      "image": "/images/artists/1Xyo4u8uXC1ZmMpatF05PJ.jpg",
+      "url": "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ",
+      "genres": [],
+      "popularity": 96
+    },
+    {
+      "name": "The Flints",
+      "id": "4yJmzmjRodRbsqgOVpHD1v",
+      "image": "/images/artists/4yJmzmjRodRbsqgOVpHD1v.jpg",
+      "url": "https://open.spotify.com/artist/4yJmzmjRodRbsqgOVpHD1v",
+      "genres": [
+        "french house"
+      ],
+      "popularity": 47
+    },
+    {
+      "name": "AG Club",
+      "id": "22KyrgRdE2K6aB5wtZls3c",
+      "image": "/images/artists/22KyrgRdE2K6aB5wtZls3c.jpg",
+      "url": "https://open.spotify.com/artist/22KyrgRdE2K6aB5wtZls3c",
+      "genres": [
+        "alternative hip hop"
+      ],
+      "popularity": 44
+    },
+    {
+      "name": "Joji",
+      "id": "3MZsBdqDrRTJihTHQrO6Dq",
+      "image": "/images/artists/3MZsBdqDrRTJihTHQrO6Dq.jpg",
+      "url": "https://open.spotify.com/artist/3MZsBdqDrRTJihTHQrO6Dq",
+      "genres": [],
+      "popularity": 83
+    },
+    {
+      "name": "Vince Staples",
+      "id": "68kEuyFKyqrdQQLLsmiatm",
+      "image": "/images/artists/68kEuyFKyqrdQQLLsmiatm.jpg",
+      "url": "https://open.spotify.com/artist/68kEuyFKyqrdQQLLsmiatm",
+      "genres": [],
+      "popularity": 67
+    },
+    {
+      "name": "Charli xcx",
+      "id": "25uiPmTg16RbhZWAqwLBy5",
+      "image": "/images/artists/25uiPmTg16RbhZWAqwLBy5.jpg",
+      "url": "https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5",
+      "genres": [
+        "hyperpop",
+        "art pop"
+      ],
+      "popularity": 84
+    },
+    {
+      "name": "Genesis Owusu",
+      "id": "1HvH97rzvCH6lfnLlgyfke",
+      "image": "/images/artists/1HvH97rzvCH6lfnLlgyfke.jpg",
+      "url": "https://open.spotify.com/artist/1HvH97rzvCH6lfnLlgyfke",
+      "genres": [],
+      "popularity": 45
+    },
+    {
+      "name": "Glass Animals",
+      "id": "4yvcSjfu4PC0CYQyLy4wSq",
+      "image": "/images/artists/4yvcSjfu4PC0CYQyLy4wSq.jpg",
+      "url": "https://open.spotify.com/artist/4yvcSjfu4PC0CYQyLy4wSq",
+      "genres": [],
+      "popularity": 75
+    },
+    {
+      "name": "Tkay Maidza",
+      "id": "1kMPdZQVdUhMDKDWOJM5iK",
+      "image": "/images/artists/1kMPdZQVdUhMDKDWOJM5iK.jpg",
+      "url": "https://open.spotify.com/artist/1kMPdZQVdUhMDKDWOJM5iK",
+      "genres": [
+        "alternative r&b"
+      ],
+      "popularity": 52
+    },
+    {
+      "name": "Kanye West",
+      "id": "5K4W6rqBFWDnAN6FQUkS6x",
+      "image": "/images/artists/5K4W6rqBFWDnAN6FQUkS6x.jpg",
+      "url": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x",
+      "genres": [
+        "rap"
+      ],
+      "popularity": 92
+    }
+  ],
+  "time_range": "medium_term"
+}

@@ -25,6 +25,11 @@ I Love reading, scowering for updates on reddit/hackernews/google news. I love k
 ## Games
 I love both playing and making games. I love video games, but the format doesn't matter too much to me. I enjoy board games and sport as well. I don't really like single player games that much, and prefer multiplayer. I enjoy interacting with other players and testing myself against them. However, there are some single player games or experiences I have enjoyed due to their unique art style or premise.
 
+## Music
+My top artists recently:
+
+{{< spotify-artists >}}
+
 <br>
 
 I have many more interests, but its too much to get it all down here. Hopefully I will be able to expand this page over time to be more complete. 

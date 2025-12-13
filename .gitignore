@@ -1,2 +1,4 @@
 .hugo_build.lock
 public/
+scripts/.env
+scripts/.spotify_cache

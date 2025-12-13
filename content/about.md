@@ -4,6 +4,8 @@ title: "About Me"
 
 # Hi, I'm Pachu Chembukave
 
+[LinkedIn](https://www.linkedin.com/in/pachuc/) * [Github](https://github.com/pachuc) * [X](https://x.com/pachu2120)
+
 ![Me](/me.jpg)
 
 I'm a software developer working in the Meta Superintelligence Lab. My focus is building coding agents and other AI powered tools for internal productivity. I enjoy going on walks with my wife Divya and my dog Mac. My favorite food is pizza!
@@ -24,7 +26,7 @@ I'm a sucker for competitive video games. My long time obsession is [Dota 2](htt
 
 Ranking movies and TV shows is such a hard topic. First of all, its so hard to even aggregate all the things you've seen given the sheer number of platforms to watch on and the lack of good APIs for querying these platforms. Thus, I have rely on my fallible brain to remember everything I've watched. So, what I have here is basically best attempt as of December 13th, 2025.
 
-One of my favorite films of the past decade has been [Parasite](https://www.imdb.com/title/tt6751668/). It is an immaculate mix of social commentary, while delivering a compelling story. A mix of grounded in reality, and entertaining absurdity. The other major film that stands out to me is [Everything Everywhere All At Once](https://www.imdb.com/title/tt6710474/). I'm a sucker for science fiction as well as fight choreography, so this movie fit's my taste quite well. Not to mention the absurdist humor resonates with me as well. On a very similar note, one of my favorite movies of all time is the original [Matrix](https://www.imdb.com/title/tt0133093/).
+One of my favorite films of the past decade has been [Parasite](https://www.imdb.com/title/tt6751668/). It is an immaculate mix of social commentary, while delivering a compelling story. A mix of grounded in reality, and entertaining absurdity. The other major film that stands out to me is [Everything Everywhere All At Once](https://www.imdb.com/title/tt6710474/). I'm a sucker for science fiction as well as fight choreography, so this movie fits my taste quite well. Not to mention the absurdist humor resonates with me as well. On a very similar note, one of my favorite movies of all time is the original [Matrix](https://www.imdb.com/title/tt0133093/).
 
 On the topic of fight choreography, I would call bad fight choreography one of my biggest pet peeves in cinema. If your fight scenes are full of camera shakes and quick cuts, I probably will not like your movie.
 
@@ -49,7 +51,3 @@ Some of my favorits from 2025:
 My top artists recently:
 
 {{< spotify-artists >}}
-
-<br>
-
-[LinkedIn](https://www.linkedin.com/in/pachuc/) * [Github](https://github.com/pachuc) * [X](https://x.com/pachu2120)

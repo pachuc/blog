@@ -14,7 +14,7 @@ For this implemenation I used the [text8](https://mattmahoney.net/dc/textdata.ht
 
 This implemenation implements:
 
-* A TextItterator class so thatt chunks of the training set can be read from disk without loading the whole thing into memory
+* A TextItterator class so that chunks of the training set can be read from disk without loading the whole thing into memory
 * A SkipGram Dataset model that makes use to the TextItterator
 * Subsampler class to remove extremely frequent words
 * NegativeSampler class to create negative samples
@@ -24,4 +24,8 @@ With all these pieces we set up the training pipeline and use the Adam built in 
 
 ## What I Learned
 
-The biggest learning for me was the fundamentals of working with PyTorch and understanding the hyperparameters for the algorithm. For my first run, I did not realize I needed to specifically declare a device for PyTorch to run on, even thought I had gone through the pain of installing CUDA drivers. Thus, my first run made very little progress before I had to cancel it, and I discovered I was running on the CPU. My second run I ran it for 100 epochs, and around 80 epochs in I saw the loss was not improving much. After some research I learned that I should reduce my learning rate by an order of magnitude, and that ~15 epochs should be more than enough for my setup. My t
+The biggest learning for me was the fundamentals of working with PyTorch and understanding the hyperparameters for the algorithm. For my first run, I did not realize I needed to specifically declare a device for PyTorch to run on, even thought I had gone through the pain of installing CUDA drivers. Thus, my first run made very little progress before I had to cancel it, and I discovered I was running on the CPU. My second run I ran it for 100 epochs, and around 80 epochs in I saw the loss was not improving much. After some research I learned that I should reduce my learning rate by an order of magnitude, and that ~15 epochs should be more than enough for my setup.
+
+Overall this was a very simple project that taught me the very basics of developing a text model using pytorch. While I have developed other models in the past, generally I have used higher level abstracts to fit neural nets to data. Working at this level helped me understand the many pieces, such as the Adam optimization algorithm, using a negative sampler to get more out of the data, and using a subsampler to remove noise/high frequency words to help the model make better associations.
+
+I also created a simple webui which you can play with to see the class king + woman = queen type behavior. Check it out [here!](https://github.com/pachuc/word2vec)

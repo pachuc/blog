@@ -1,4 +1,8 @@
 ---
+tags:
+    - project
+    - programming
+    - AI
 title: "Advent of Claude Code"
 date: 2025-11-30T20:38:44-05:00
 draft: false

@@ -1,4 +1,8 @@
 ---
+tags:
+    - project
+    - programming
+    - web
 title: "Tui Nav"
 date: 2025-11-30T20:32:56-05:00
 draft: false

@@ -1,4 +1,8 @@
 ---
+tags:
+    - project
+    - programming
+    - AI
 title: "Word 2 Vec"
 date: 2025-12-13T16:32:01-05:00
 draft: false

@@ -40,6 +40,11 @@ theme = "tui-nav"
     title = "About"
     url = "/about/"
     description = "me"
+  
+  [[params.tuiNav.homeItems]]
+    title = "Tags"
+    url = "/tags/"
+    description = "tags"
 
 [taxonomies]
   tag = "tags"

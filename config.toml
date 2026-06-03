@@ -13,6 +13,7 @@ theme = "tui-nav"
   backgroundColor = "#0a0a0a"
   textColor = "#e0e0e0"
   cursorColor = "#00ff00"
+  codeColor = "#00ff00"
 
   # Fonts
   fontFamily = '"Home Video", ui-monospace, monospace'

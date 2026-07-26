@@ -1,0 +1,12 @@
+{{ $snapshots := site.Data.spotify }}
+{{ if $snapshots }}
+{{ $keys := slice }}
+{{ range $key, $_ := $snapshots }}{{ $keys = $keys | append $key }}{{ end }}
+{{ partial "spotify-style.html" . }}
+{{ range sort $keys "value" "desc" }}
+<h2>{{ (time .).Format "January 2, 2006" }}</h2>
+{{ partial "spotify-grid.html" (index $snapshots .).top_artists }}
+{{ end }}
+{{ else }}
+<p><em>No Spotify data available. Run the fetch script to populate.</em></p>
+{{ end }}

@@ -49,7 +49,7 @@ cd scripts && uv run fetch_spotify.py
 ```
 
 Outputs:
-- `data/spotify.json` - Artist data for Hugo
-- `static/images/artists/` - Downloaded artist images
+- `data/spotify/<YYYY-MM-DD>.json` - Dated snapshot of artist data (one per run day, older snapshots are kept)
+- `static/images/artists/` - Downloaded artist images (keyed by artist ID, shared across snapshots)
 
-Used by `{{< spotify-artists >}}` shortcode in `content/about.md`.
+Used by `{{< spotify-artists >}}` in `content/about.md` (renders the latest snapshot) and `{{< spotify-archive >}}` in `content/music-archive.md` (renders all snapshots, newest first).

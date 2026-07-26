@@ -1,49 +1,10 @@
-{{ $data := site.Data.spotify }}
-{{ if $data }}
-<style>
-.spotify-artists {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 1rem;
-    margin: 1.5rem 0;
-}
-.spotify-artist {
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    transition: transform 0.2s ease;
-}
-.spotify-artist:hover {
-    transform: scale(1.05);
-}
-.spotify-artist img {
-    width: 100%;
-    aspect-ratio: 1;
-    object-fit: cover;
-    border-radius: 4px;
-    border: 1px solid #333;
-}
-.spotify-artist-name {
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    line-height: 1.2;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-</style>
-<div class="spotify-artists">
-    {{ range $data.top_artists }}
-    <a href="{{ .url }}" target="_blank" rel="noopener" class="spotify-artist" title="{{ .name }}">
-        {{ if .image }}
-        <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
-        {{ else }}
-        <div style="width:100%;aspect-ratio:1;background:#222;border-radius:4px;"></div>
-        {{ end }}
-        <div class="spotify-artist-name">{{ .name }}</div>
-    </a>
-    {{ end }}
-</div>
+{{ $snapshots := site.Data.spotify }}
+{{ if $snapshots }}
+{{ $latest := "" }}
+{{ range $key, $_ := $snapshots }}{{ $latest = $key }}{{ end }}
+{{ partial "spotify-style.html" . }}
+{{ partial "spotify-grid.html" (index $snapshots $latest).top_artists }}
+<p class="spotify-snapshot-caption">As of {{ (time $latest).Format "January 2, 2006" }} &middot; <a href="{{ "music-archive/" | relURL }}">View past snapshots</a></p>
 {{ else }}
 <p><em>No Spotify data available. Run the fetch script to populate.</em></p>
 {{ end }}

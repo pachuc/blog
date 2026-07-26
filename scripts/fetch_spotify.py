@@ -12,6 +12,7 @@ import json
 import os
 import sys
 import urllib.request
+from datetime import date
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -24,7 +25,7 @@ load_dotenv(Path(__file__).parent / ".env")
 SCRIPT_DIR = Path(__file__).parent
 BLOG_ROOT = SCRIPT_DIR.parent
 STATIC_DIR = BLOG_ROOT / "static" / "images" / "artists"
-DATA_DIR = BLOG_ROOT / "data"
+DATA_DIR = BLOG_ROOT / "data" / "spotify"
 CACHE_PATH = SCRIPT_DIR / ".spotify_cache"
 
 ARTIST_COUNT = 24 # makes an even grid
@@ -100,13 +101,15 @@ def fetch_top_artists(sp: spotipy.Spotify) -> list[dict]:
 
 
 def save_data(artists: list[dict]):
-    """Save artists data to Hugo data file."""
+    """Save artists data as a dated Hugo data file (one snapshot per day)."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    data_path = DATA_DIR / "spotify.json"
+    today = date.today().isoformat()
+    data_path = DATA_DIR / f"{today}.json"
 
     data = {
-        "top_artists": artists,
+        "date": today,
         "time_range": TIME_RANGE,
+        "top_artists": artists,
     }
 
     with open(data_path, "w") as f:

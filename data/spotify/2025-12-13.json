@@ -1,4 +1,6 @@
 {
+  "date": "2025-12-13",
+  "time_range": "medium_term",
   "top_artists": [
     {
       "name": "Justice",
@@ -223,6 +225,5 @@
       ],
       "popularity": 92
     }
-  ],
-  "time_range": "medium_term"
+  ]
 }

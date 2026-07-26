@@ -1,0 +1,12 @@
+<div class="spotify-artists">
+    {{ range . }}
+    <a href="{{ .url }}" target="_blank" rel="noopener" class="spotify-artist" title="{{ .name }}">
+        {{ if .image }}
+        <img src="{{ .image }}" alt="{{ .name }}" loading="lazy">
+        {{ else }}
+        <div style="width:100%;aspect-ratio:1;background:#222;border-radius:4px;"></div>
+        {{ end }}
+        <div class="spotify-artist-name">{{ .name }}</div>
+    </a>
+    {{ end }}
+</div>

@@ -1,8 +1,5 @@
 ---
-tags:
-    - programming
-    - work
-    - Ruby
+tags: [programming, work, Ruby]
 title: "Crossing the Rubicon"
 date: 2020-11-23T21:55:38-05:00
 draft: false

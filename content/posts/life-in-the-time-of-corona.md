@@ -1,10 +1,5 @@
 ---
-tags:
-  - corona virus
-  - COVID-19
-  - reasearch
-  - health
-  - news
+tags: [COVID-19, research, health, news]
 title: "Life in the Time of Corona"
 date: 2020-02-29T00:20:08-05:00
 draft: false

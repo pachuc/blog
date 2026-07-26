@@ -1,10 +1,5 @@
 ---
-tags:
-  - security
-  - identity
-  - technology
-  - work
-  - programming
+tags: [security, identity, technology, work, programming]
 title: "Thinking About Identity"
 date: 2020-11-16T20:36:19-05:00
 draft: false

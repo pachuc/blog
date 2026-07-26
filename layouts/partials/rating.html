@@ -1,0 +1,23 @@
+{{ $raw := math.Min 10 (math.Max 0 (float .Params.rating)) }}
+{{ $rating := div (math.Round (mul $raw 2)) 2.0 }}
+{{ $full := int (math.Floor $rating) }}
+{{ $half := gt $rating (float $full) }}
+{{ $empty := sub 10 $full }}
+{{ if $half }}{{ $empty = sub $empty 1 }}{{ end }}
+<style>
+.post-rating {
+    font-family: var(--tui-content-font, monospace);
+    margin: 0.5rem 0 1rem;
+    font-size: 0.95rem;
+}
+.post-rating-fill {
+    color: var(--tui-cursor, #00ff00);
+}
+.post-rating-empty {
+    opacity: 0.35;
+}
+</style>
+<div class="post-rating" role="img" aria-label="Rated {{ $rating }} out of 10">
+    <span class="post-rating-bar">[<span class="post-rating-fill">{{ strings.Repeat $full "■" }}{{ if $half }}◧{{ end }}</span><span class="post-rating-empty">{{ strings.Repeat $empty "□" }}</span>]</span>
+    <span class="post-rating-score">{{ $rating }}/10</span>
+</div>

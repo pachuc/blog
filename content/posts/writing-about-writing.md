@@ -1,7 +1,5 @@
 ---
-tags:
-  - writing
-  - personal
+tags: [writing, personal]
 title: "Writing About Writing"
 date: 2019-09-04T00:28:44-04:00
 draft: false

@@ -1,8 +1,5 @@
 ---
-tags:
-    - programming
-    - work
-    - Ruby
+tags: [programming, work, Ruby]
 title: "Training on Rails"
 date: 2021-01-03T15:21:38-05:00
 draft: false
@@ -26,8 +23,7 @@ MVC classes are organized under the `models`, `controllers`, and `views` under `
 ### ActiveRecord
 
 
-The model class in Rails is called `ActiveRecord` because it conforms to the [Active Record pattern](https://en.wikipedia.org/wiki/Active_record_pattern).
-ActiveRecord follows an intuitive naming pattern for its classes. For example, for a table named `stories` in the database, the corresponding ActiveRecord class would be `Story`. Rails is able to translate Model names to their plural forms using [Rails Inflector](https://api.rubyonrails.org/classes/ActiveSupport/Inflector.html). The Rails team has stated that this may have bugs/incorrect translations, but they will not be patching it, so as not to break legacy applications that rely on the mistranslation. Instead they recommend fixing it in your application code yourself, by manually specifying the model table relationship. 
+The model class in Rails is called `ActiveRecord` because it conforms to the [Active Record pattern](https://en.wikipedia.org/wiki/Active_record_pattern). ActiveRecord follows an intuitive naming pattern for its classes. For example, for a table named `stories` in the database, the corresponding ActiveRecord class would be `Story`. Rails is able to translate Model names to their plural forms using [Rails Inflector](https://api.rubyonrails.org/classes/ActiveSupport/Inflector.html). The Rails team has stated that this may have bugs/incorrect translations, but they will not be patching it, so as not to break legacy applications that rely on the mistranslation. Instead they recommend fixing it in your application code yourself, by manually specifying the model table relationship. 
 
 The ActiveRecord class also introspects the table's columns and provides attributes on the class for each column. Beyond just providing a pure mapping of database columns, and abstracting out database connections & interactions, ActiveRecord also provides convenient syntax for defining the following database relationships between entities:
 

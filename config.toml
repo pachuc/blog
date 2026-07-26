@@ -50,3 +50,8 @@ theme = "tui-nav"
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true

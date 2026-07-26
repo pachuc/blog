@@ -1,9 +1,5 @@
 ---
-tags:
-    - programming
-    - crypto
-    - technology
-    - investing
+tags: [programming, crypto, technology, investing]
 title: "On Crypto"
 date: 2021-09-26T18:05:23-04:00
 draft: false

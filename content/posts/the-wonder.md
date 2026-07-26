@@ -1,8 +1,7 @@
 ---
-tags:
-    - movies
-    - review
+tags: [movies, reviews]
 title: "The Wonder"
+rating: 6.5
 date: 2022-11-28T14:00:26-05:00
 draft: false
 ---
@@ -12,5 +11,3 @@ draft: false
 While the film is well made, and the entire cast gives stellar performances, I have one major criticism of the film: it is too on-the-nose. The commentary on religion is extremely one-sided with very little nuance. All the symbolism and themes of the movie are obvious, rather than subtly integrated. For example, using a Frame Story mechanism to highlight the importance of stories to the plot, with no other tie-in or reference to it, was heavy handed, and poorly executed in my opinion. 
 
 Overall, I thought the movie was fine. It was beautifully filmed, and acted, and achieved a very strong and consistent melancholy tone, which evoked the same feeling in myself. If this is a feeling or vibe that you are looking for, then this movie is highly recommended. Personally, I think the film could have been excellent if there were more layers to the plot, and its themes and ideas were integrated with more nuance.
-
-6.5/10

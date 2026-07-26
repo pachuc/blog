@@ -1,7 +1,5 @@
 ---
-tags:
-  - election
-  - news
+tags: [election, news]
 title: "Election Fraud"
 date: 2020-12-10T20:35:33-05:00
 draft: true

@@ -1,8 +1,5 @@
 ---
-tags:
-  - programming
-  - work
-  - personal
+tags: [programming, work, personal]
 title: "Four Years At Fireeye"
 date: 2019-08-27T18:51:26-04:00
 draft: false

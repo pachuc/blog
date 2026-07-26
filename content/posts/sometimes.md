@@ -1,4 +1,5 @@
 ---
+tags: [poetry]
 title: "Sometimes"
 date: 2022-11-29T15:04:44-05:00
 draft: false

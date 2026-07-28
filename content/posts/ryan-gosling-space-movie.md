@@ -1,7 +1,7 @@
 ---
 tags: [poetry, movies, reviews]
 title: "Project Hail Mary"
-rating: 6
+rating: 5
 date: 2026-07-07T02:10:20-04:00
 draft: false
 ---

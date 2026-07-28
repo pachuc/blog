@@ -8,7 +8,10 @@
 .post-rating {
     font-family: var(--tui-content-font, monospace);
     margin: 0.5rem 0 1rem;
-    font-size: 0.95rem;
+    font-size: 1.4rem;
+}
+.post-rating-bar {
+    letter-spacing: 0.5em;
 }
 .post-rating-fill {
     color: var(--tui-cursor, #00ff00);
@@ -18,6 +21,5 @@
 }
 </style>
 <div class="post-rating" role="img" aria-label="Rated {{ $rating }} out of 10">
-    <span class="post-rating-bar">[<span class="post-rating-fill">{{ strings.Repeat $full "■" }}{{ if $half }}◧{{ end }}</span><span class="post-rating-empty">{{ strings.Repeat $empty "□" }}</span>]</span>
-    <span class="post-rating-score">{{ $rating }}/10</span>
+    <span class="post-rating-bar"><span class="post-rating-fill">{{ strings.Repeat $full "■" }}{{ if $half }}◧{{ end }}</span><span class="post-rating-empty">{{ strings.Repeat $empty "□" }}</span></span>
 </div>

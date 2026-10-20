@@ -1,0 +1,10 @@
+{{- $src := .Get "src" -}}
+{{- $title := .Get "title" | default "Game" -}}
+<div class="game-embed">
+    <iframe src="{{ $src | relURL }}" title="{{ $title }}" allow="fullscreen; gamepad" allowfullscreen loading="lazy"></iframe>
+</div>
+<p class="game-embed-actions">
+    <button type="button" class="game-fullscreen" onclick="this.closest('p').previousElementSibling.querySelector('iframe').requestFullscreen()">[ fullscreen ]</button>
+    <a href="{{ $src | relURL }}" target="_blank" rel="noopener">[ open in new tab ]</a>
+    <span>click the game to give it the keyboard</span>
+</p>

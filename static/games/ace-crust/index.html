@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACE CRUST</title>
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+<div id="game">
+  <canvas id="view"></canvas>
+  <div id="speedfx"></div>
+  <div id="flash"></div>
+
+  <div id="hud" class="hidden">
+    <div id="hud-tl" class="panel">
+      <div class="big" id="cash">$0</div>
+      <div class="row"><span class="label">COMBO</span> <span id="combo">x0</span></div>
+      <div class="bar"><div id="combo-bar" class="fill magenta"></div></div>
+      <div class="row"><span class="label">WANTED</span> <span id="wanted" class="stars">☆☆☆☆☆</span></div>
+    </div>
+
+    <div id="hud-tr" class="panel right">
+      <div class="label" id="job-label">PICKUP</div>
+      <div class="big" id="job-timer">--</div>
+      <div class="row" id="job-detail"></div>
+      <div class="row"><span class="label">STRIKES</span> <span id="strikes"></span></div>
+    </div>
+
+    <div id="hud-bl" class="panel">
+      <div class="big"><span id="speed">0</span><span class="unit"> KM/H</span></div>
+      <div class="row"><span class="label">ALT</span> <span id="alt">0</span></div>
+      <div class="row"><span class="label">BOOST</span></div>
+      <div class="bar"><div id="boost-bar" class="fill cyan"></div></div>
+      <div class="row"><span class="label">DRIFT</span> <span id="drift" class="pips"><i></i><i></i><i></i></span></div>
+    </div>
+
+    <div id="hud-br" class="panel right">
+      <div class="row"><span class="label">HULL</span> <span id="hull-num">100</span></div>
+      <div class="bar"><div id="hull-bar" class="fill green"></div></div>
+      <div class="row"><span class="label">MSL</span> <span id="missiles">▮▮</span></div>
+    </div>
+
+    <canvas id="radar" width="170" height="170"></canvas>
+    <div id="reticle"></div>
+    <div id="lock" class="hidden"><span></span></div>
+    <div id="objective" class="hidden"><div class="mark"></div><span></span></div>
+    <div id="callouts"></div>
+    <div id="center-msg"></div>
+  </div>
+
+  <div id="screen"></div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
